@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<style>
+    
+    /* body style */
+    body {
+        background-color: #f3ece7;
+        font-family: 'Quattrocento Sans';
+        color: #38250B;
+        margin: 0;
+        padding: 5%;
+    }
+
+    /* logo style */
+    .logo {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        left: 40%;
+        display: flex;
+        text-decoration: none;
+    }
+
+    .logo img {
+        margin-top: -10px;
+        left: 50%;
+        width: 70px;
+    }
+
+    .logo #name-ketchup {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo #name-berries {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo:hover {
+        text-decoration: none;
+        background-color: #efddd6;
+    }
+
+    /* navigation bar style */
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: #f3ece7;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        color: #591a1a;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover:not(.active) {
+        background-color: #efddd6;
+    }
+
+    .active {
+        background-color: #e4c8be;
+    }
+
+    /* main (menu) container style */
+    .main-container {
+        position: relative;
+        text-align: center;
+        background-color: #ecd8d1;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 80px;
+    }
+
+    .main-container #text {
+        font-size: 40px;
+        color: #954e4e;
+        font-family: 'rammetto one';
+        text-align: center;
+        margin: 40px;
+        padding-top: 18px;
+    }
+
+    .main-container #left-img {
+        height: 400px;
+        position: absolute;
+        left: 60px;
+    }
+
+    .main-container #right-img {
+        height: 400px;
+        position: absolute;
+        right: 60px;
+    }
+
+    .main-container table {
+        border-collapse: collapse;
+        width: 40%;
+        height: 400px;
+        margin-left: 400px;
+        background-color: #f3ece7;
+        border-radius: 20px;
+        padding: 20px;
+        padding-bottom: 20px;
+        color: #954e4e
+    }
+
+    .main-container th {
+        border: 0px solid transparent;
+        text-align: left;
+        padding: 15px;
+        padding-left: 40px;
+        font-family: 'oleo script';
+        font-size: 30px;
+        
+    }
+
+    .main-container td {
+        border: 0px solid transparent;
+        text-align: left;
+        padding: 10px;
+        padding-left: 40px;
+    }
+
+    /* menu with images style */
+    .images1 {
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: #ecd8d1;
+    }
+
+    .figcaption1 {
+        text-align: center;
+        font-size: 20px;
+        color: #954e4e;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ecd8d1;
+        padding: 20px;
+        font-family: 'oleo script';
+        margin-top: -40px;
+    }
+
+    .images2 {
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: #ecd8d1;
+        margin-top: 40px;
+    }
+
+    .figcaption2 {
+        text-align: center;
+        font-size: 20px;
+        color: #954e4e;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ecd8d1;
+        padding: 20px;
+        font-family: 'oleo script';
+        margin-top: -40px;
+    }
+
+</style>
+</head>
+<body>
+
+    <a href="WrapUpAbout.html">
+    <div class="logo">
+        <div id="name-ketchup">Ketchup </div>
+        <img src="logo.png" alt="Logo">
+        <div id="name-berries"> Berries</div>
+    </div></a>
+
+    <div class="navbar">
+        <ul>
+        <li><a href="WrapUpHome.html">HOME</a></li>
+        <li><a href="WrapUpAbout.html">ABOUT</a></li>
+        <li><a class="active" href="WrapUpMenu.html">MENU</a></li>
+        <li><a href="WrapUpVisitUs.html">VISIT US</a></li>
+    </ul>
+    </div>
+
+    <div class="main-container">
+        <h2 id="text">Menu</h2>
+        <img id="left-img" src="menu-left.jpeg" alt="left image">
+
+        <img id="right-img" src="menu-right.jpeg" alt="right image">
+    
+        <table>
+            <tr>
+                <th>Strawberry Desserts</th>
+            </tr>
+            <tr>
+                <td>Classic Strawberry Cake</td>
+                <td>$120</td>
+            </tr>
+            <tr>
+                <td>Square Cake</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Layer Cake</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td>Chocolate Cake</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Strawberry Fruit Cake</td>
+                <td>$110</td>
+            </tr>
+            <tr>
+                <td>Strawberry Snowman</td>
+                <td>$18</td>
+            </tr>
+            <tr>
+                <td>Strawberry Bagel</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Strawbery Waffle</td>
+                <td>$28</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="images1">
+        <img src="cake.png" alt="Classic Cake">
+        <img src="square.png" alt="Square Cake">
+        <img src="layer.png" alt="Layer Cake">
+        <img src="chocolate.png" alt="Chocolate Cake">
+    </div>
+
+    <div class="figcaption1">
+        <p>Classic Cake</p>
+        <p>Square Cake</p>
+        <p>Layer Cake</p>
+        <p>Chocolate Cake</p>
+    </div>
+
+    <br><br>
+    <div class="images2">
+        <img src="cake2.png" alt="Strawberry Fruit Cake">
+        <img src="snowman.png" alt="Snowman Cake">
+        <img src="bagel.png" alt="Strawberry Bagel">
+        <img src="waffle.png" alt="Strawberry Waffle">
+    </div>
+
+    <div class="figcaption2">
+        <p>Strawberry Fruit Cake</p>
+        <p>Snowman Cake</p>
+        <p>Strawberry Bagel</p>
+        <p>Strawberry Waffle</p>
+    </div>
+       
+</body>
+</html>

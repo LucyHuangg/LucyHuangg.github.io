@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<style>
+    
+    /* body style */
+    body {
+        background-color: #f3ece7;
+        font-family: 'Quattrocento Sans';
+        color: #38250B;
+        margin: 0;
+        padding: 5%;
+    }
+
+    /* logo style */
+    .logo {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        left: 40%;
+        display: flex;
+        text-decoration: none;
+    }
+
+    .logo img {
+        margin-top: -10px;
+        left: 50%;
+        width: 70px;
+    }
+
+    .logo #name-ketchup {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo #name-berries {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo:hover {
+        text-decoration: none;
+        background-color: #efddd6;
+    }
+
+    /* navigation bar style */
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: #f3ece7;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        color: #591a1a;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover:not(.active) {
+        background-color: #efddd6;
+    }
+
+    .active {
+        background-color: #e4c8be;
+    }
+
+    /* main container style */
+    .main-container {
+        position: relative;
+        text-align: center;
+        background-color: #ecd8d1;
+        width: 100%;
+        height: 400px;
+        margin-top: 0px;
+    }
+
+    .main-container #cake-img {
+        width: 500px;
+        float: right;
+        top: 120px;
+        right: -30px;
+        position: absolute;
+        rotate: 355deg;
+    }
+
+    .main-container #fork {
+        width: 400px;
+        opacity: 0.8;
+        rotate: 150deg;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 100px;
+    }
+
+    .main-container #text {
+        text-align: left;
+        padding: 25px 0;
+        font-size: 60px;
+        color: #954e4e;
+        font-family: 'rammetto one';
+        margin: 40px;
+        line-height: 2;
+        margin-left: 60px;
+    }
+
+    /* hyperlink menu on image style */
+    .menu {
+        position: absolute;
+        top: 160px;
+        text-align: center;
+        display: flex;
+        left: 480px;
+        height: 320px;
+        width: 380px;
+        background-color: #f3ece7;
+        border-radius: 50px;
+
+    }
+
+    .menu:hover {
+        background-color: #ffe9e0;
+    }
+
+    .menu h2 {
+        color: #b47373;
+        font-size: 50px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-family: 'Alfa Slab One';
+        padding: 20px 0;
+    }
+
+    .menu img {
+        height: 260px;
+    }
+
+    /* home page text style */
+    .home-text { 
+        text-align: center;
+        display: block;
+    }
+
+    .home-text h2 {
+        font-family: 'Oleo Script';
+        font-size: 50px;
+        margin-top: 80px;
+        color: #954e4e;
+        margin-bottom: 20px;
+    }
+
+    .home-text #slogan {
+        font-family: 'Oleo Script';
+        font-size: 40px;
+        color: #b47373;
+    }
+
+    .home-text p {
+        width: 45%;
+        line-height: 1.4;
+        vertical-align: middle;
+        margin-left: 350px;
+        margin-top: 40px;
+    }
+
+    .home-text p span {
+        font-size: 14px;
+        color: #c59090;
+    }
+
+    /* side images style */
+    .side-images {
+        display: flex;
+        opacity: 0.5;
+        height: 200px;
+        position: absolute;
+        top: 700px;
+    }
+
+    .side-images #left {
+        rotate: 270deg;
+        margin-right: 900px;
+    }
+
+</style>
+</head>
+<body>
+
+    <a href="WrapUpAbout.html">
+    <div class="logo">
+        <div id="name-ketchup">Ketchup </div>
+        <img src="logo.png" alt="Logo">
+        <div id="name-berries"> Berries</div>
+    </div></a>
+
+    <div class="navbar">
+        <ul>
+        <li><a class="active" href="WrapUpHome.html">HOME</a></li>
+        <li><a href="WrapUpAbout.html">ABOUT</a></li>
+        <li><a href="WrapUpMenu.html">MENU</a></li>
+        <li><a href="WrapUpVisitUs.html">VISIT US</a></li>
+    </ul>
+    </div>
+
+    <div class="main-container">
+        <p id="text">Freshly <br>Baked <br>Cakes</p>
+        <img id="fork" src="fork.png" alt="Fork">
+        <img id="cake-img" src="home_cake.png">
+    </div>
+
+    <a href="WrapUpMenu.html">
+    <div class="menu">
+        <h2>MENU</h2>
+        <p>
+            <img src="white-berry.png" alt="Menu">
+        </p>
+    </div>
+    </a>
+
+    <div class="home-text">
+        <h2>Ketchup Berries</h2>
+
+        <span id="slogan">"Ketchup Berries!" Spread the Sweetness!</span>
+    
+        <p>Welcome to Ketchup Berries! This is a place where every moment is filled with the sweet scent of freshly baked strawberrry cakes. 
+            <br><br>Step into Ketchup Berries and let the tempting display of cakes transport you to a world of flavors and memories. 
+            Whether it is a birthday, wedding, or a random time on a random day, just a craving for something sweet, our cakes are designed to make every occasion more delightful and memorable.
+            <br><br><span><em>This content was created with the help of A.I.</em></span>
+        </p>
+    </div>
+
+    <div class="side-images">
+        <img id="left" src="berry1.png" alt="Left side image">
+        <img src="berry1.png" alt="Right side image">
+    </div>
+
+</body>
+</html>

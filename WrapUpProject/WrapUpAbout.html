@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Us</title>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<style>
+    
+    /* body style */
+    body {
+        background-color: #f3ece7;
+        font-family: 'Quattrocento Sans';
+        color: #38250B;
+        margin: 0;
+        padding: 5%;
+    }
+
+    /* logo style */
+    .logo {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        left: 40%;
+        display: flex;
+        text-decoration: none;
+    }
+
+    .logo img {
+        margin-top: -10px;
+        left: 50%;
+        width: 70px;
+    }
+
+    .logo #name-ketchup {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo #name-berries {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo:hover {
+        text-decoration: none;
+        background-color: #efddd6;
+    }
+
+    /* navigation bar style */
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: #f3ece7;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        color: #591a1a;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover:not(.active) {
+        background-color: #efddd6;
+    }
+
+    .active {
+        background-color: #e4c8be;
+    }
+
+    /* main container style */
+    .main-container {
+        position: relative;
+        text-align: center;
+        background-color: #ecd8d1;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 80px;
+    }
+
+    .main-container #text {
+        font-size: 40px;
+        color: #954e4e;
+        font-family: 'rammetto one';
+        text-align: center;
+        margin: 40px;
+        padding-top: 18px;
+    }
+
+    /* loacation page text style */
+    .location-text {
+        display: block;
+    }
+    .location-text p {
+        font-size: 18px;
+        width: 60%;
+        line-height: 1.8;
+    }
+
+    .location-text img {
+        height: 500px;
+        position: absolute;
+        right: 120px;
+        top: 280px;
+    }
+
+    /* bottom images style */
+    .images {
+        display: flex;
+        position: absolute;
+        left: 30px;
+        margin: 100px;
+        top: 450px;
+    }
+
+    .images #first {
+        width: 200px;
+    }
+
+    .images #second {
+        width: 200px;
+    }
+
+    .images #third {
+        width: 200px;
+    }
+
+</style>
+</head>
+<body>
+
+    <a href="WrapUpAbout.html">
+    <div class="logo">
+        <div id="name-ketchup">Ketchup </div>
+        <img src="logo.png" alt="Logo">
+        <div id="name-berries"> Berries</div>
+    </div></a>
+
+    <div class="navbar">
+        <ul>
+        <li><a href="WrapUpHome.html">HOME</a></li>
+        <li><a class="active" href="WrapUpAbout.html">ABOUT</a></li>
+        <li><a href="WrapUpMenu.html">MENU</a></li>
+        <li><a href="WrapUpVisitUs.html">VISIT US</a></li>
+    </ul>
+    </div>
+
+    <div class="main-container">
+        <h2 id="text">About Us</h2>
+    </div>
+
+    <div class="location-text">
+        <p>
+            "Ketchup Berries", you might be wondering why is a dessert store is named like that?
+            Well, if you reviewed our menu, you will realize that our desserts are all related to strawberries.
+            Strawberries and ketchup, how are the two related? 
+            The color red! Ketchup is red and the word 'strawberries' got the word 'berries' in it. 
+            So we thought it would be a good idea to name our store "Ketchup Berries".
+            With our store named, a slogan was created: "Ketchup" Berries! Spread the sweetness! 
+            Which could also be interpreted as "Catch up Berries! Spread the sweetness!"
+            We felt it would be nice to spread the sweetness of our desserts to everyone. 
+            The ones that might also carry happiness to you.
+        </p>
+
+        <img src="aboutus.jpeg" alt="image of the store">
+    </div>
+       
+    <div class="images">
+        <img id="first" src="cake.png" alt="classic strawberrry cake">
+        <img id="second" src="snowman.png" alt="snowman cake">
+        <img id="third" src="square.png" alt="square cake">
+    </div>
+
+</body>
+</html>

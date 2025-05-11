@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Visit Us</title>
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Oleo Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Rammetto One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<style>
+    
+    /* body style */
+    body {
+        background-color: #f3ece7;
+        font-family: 'Quattrocento Sans';
+        color: #38250B;
+        margin: 0;
+        padding: 5%;
+    }
+
+    /* logo style */
+    .logo {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        left: 40%;
+        display: flex;
+        text-decoration: none;
+    }
+
+    .logo img {
+        margin-top: -10px;
+        left: 50%;
+        width: 70px;
+    }
+
+    .logo #name-ketchup {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo #name-berries {
+        font-size: 20px;
+        color: #954e4e;
+        font-family: 'Oleo Script';
+        margin-top: 10px;
+    }
+
+    .logo:hover {
+        text-decoration: none;
+        background-color: #efddd6;
+    }
+
+    /* navigation bar style */
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        background-color: #f3ece7;
+    }
+
+    .navbar li {
+        float: left;
+    }
+
+    .navbar li a {
+        display: block;
+        color: #591a1a;
+        font-size: 15px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover:not(.active) {
+        background-color: #efddd6;
+    }
+
+    .active {
+        background-color: #e4c8be;
+    }
+
+    /* main container style */
+    .main-container {
+        position: relative;
+        text-align: center;
+        background-color: #ecd8d1;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 80px;
+    }
+
+    .main-container #text {
+        font-size: 40px;
+        color: #954e4e;
+        font-family: 'rammetto one';
+        text-align: center;
+        margin: 40px;
+        padding-top: 18px;
+    }
+
+    /* loacation page text style */
+    .location-text {
+        display: flex;
+    }
+    .location-text p {
+        font-size: 18px;
+        width: 50%;
+        line-height: 1.8;
+    }
+
+    .location-text p img {
+        width: 150px;
+        opacity: 0.8;
+        margin-left: 230px;
+    }
+
+    .location-text img {
+        width: 600px;
+        margin-left: 100px;
+    }
+
+    /* table style */
+    table {
+        width: 45%;
+        border-spacing: 20px;
+        position: absolute;
+        left: 60px;
+        top: 880px;
+        text-align: center;
+        line-height: 1.5;
+        background-color: #ecd8d1;
+    }
+    
+    table th td {
+        border: 1px solid transparent;
+        border-collapse: collapse;
+    }
+
+    th td {
+        padding: 10px;
+    }
+
+</style>
+</head>
+<body>
+
+    <a href="WrapUpAbout.html">
+    <div class="logo">
+        <div id="name-ketchup">Ketchup </div>
+        <img src="logo.png" alt="Logo">
+        <div id="name-berries"> Berries</div>
+    </div></a>
+
+    <div class="navbar">
+        <ul>
+        <li><a href="WrapUpHome.html">HOME</a></li>
+        <li><a href="WrapUpAbout.html">ABOUT</a></li>
+        <li><a href="WrapUpMenu.html">MENU</a></li>
+        <li><a class="active" href="WrapUpVisitUs.html">VISIT US</a></li>
+    </ul>
+    </div>
+
+    <div class="main-container">
+        <h2 id="text">Visit Us</h2>
+    </div>
+
+    <div class="location-text">
+    <p>
+        We're located beside The International School of Macao, filling in the place with the scent of fresh strawberries and cakes.
+        You can find us on the right side of the street after arriving at the school.
+        <br><br>If you're looking for a cozy place to relax and enjoy some delicious food, you've come to the right place! 
+        We are always here to share the sweetness mixed with strawberries, cakes, and our love for food with you.
+        <br><br>If this is your first time visiting us, the classic strawberry cake could be a good choice. 
+        Strawberry desserts are always a good choice to enrich your day!
+        <br><br>Whether this store is planned in your schedule or just passing by, you are always welcome to stop by and enjoy the sweetness with us!
+        <img src="logo.png" alt="logo">
+    </p>
+
+    <img src="location.jpeg" alt="image of the store">
+
+    </div>
+    
+    <br><br>
+    <table>
+        <tr>
+            <th>Address</th>
+            <td>123 TIS Street
+                <br>Macau, China</td>
+        </tr><br>
+        <tr>
+            <th>Opening Hours</th>
+            <td>9:00 AM - 5:00 PM</td>
+        </tr><br>
+        <tr>
+            <th>Contact</th>
+            <td>+853 1234 5678
+                <br>ketchupberries@abc.com</td>
+            </td>
+    </table>
+
+</body>
+</html>
